@@ -219,6 +219,8 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.5)
   - RNAudio (4.3.0):
     - React
+  - RNAudioRecorderPlayer (2.4.4-rc.1):
+    - React
   - RNSoundLevel (1.1.5):
     - React
   - Yoga (1.14.0)
@@ -252,6 +254,7 @@ DEPENDENCIES:
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNAudio (from `../node_modules/react-native-audio`)
+  - RNAudioRecorderPlayer (from `../node_modules/react-native-audio-recorder-player`)
   - RNSoundLevel (from `../node_modules/react-native-sound-level`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -310,6 +313,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNAudio:
     :path: "../node_modules/react-native-audio"
+  RNAudioRecorderPlayer:
+    :path: "../node_modules/react-native-audio-recorder-player"
   RNSoundLevel:
     :path: "../node_modules/react-native-sound-level"
   Yoga:
@@ -342,6 +347,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
   RNAudio: cae2991f2dccb75163f260b60da8051717b959fa
+  RNAudioRecorderPlayer: e4fb8c4f21a3c4cb5b865f0a72c2c74437ed8734
   RNSoundLevel: a02f3bfbb81aeec256de4e41d7fc967b32e3faf1
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 

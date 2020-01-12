@@ -28,7 +28,21 @@ export default class Mic extends React.Component {
         RNSoundLevel.stop();
     }
 
+    onStartRecord = async () => {
+
+    }
+
     render() {
+
+        let audioPath = AudioUtils.DocumentDirectoryPath + '/test.aac';
+
+        AudioRecorder.prepareRecordingAtPath(audioPath, {
+            SampleRate: 22050,
+            Channels: 1,
+            AudioQuality: "Low",
+            AudioEncoding: "aac",
+            MeteringEnabled: true
+        });
 
         return (
             <View>
@@ -45,7 +59,18 @@ export default class Mic extends React.Component {
                     Mic Input: {this.state.data}
                 </Text>
 
-                <Button title="Record"></Button>
+                <Button title="Record"
+                    onPress={() => {
+                        AudioRecorder.prepareRecordingAtPath(AudioUtils.DocumentDirectoryPath + "/test.aac", {
+                            SampleRate: 22050,
+                            Channels: 1,
+                            AudioQuality: "Low",
+                            AudioEncoding: "aac"
+                        });
+                    }}
+
+
+                ></Button>
             </View>
         )
     }
